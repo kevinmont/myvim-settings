@@ -1,11 +1,15 @@
+" disable compatibility with vi which can cause unexpected issues
+set nocompatible 
 
-set nocompatible # disable compatibility with vi which can cause unexpected issues
+" enable file type detection
+filetype on
 
-filetype on # enable file type detection
+" enable plugins and load plugin for the detected file type
+filetype plugin on
 
-filetype plugin on # enable plugins and load plugin for the detected file type
+" load an indent file for the detected file type
+filetype indent on
 
-filetype indent on # load an indent file for the detected file type
-
-syntax on # turn sintax highlighting on
+" turn sintax highlighting on
+syntax on
 
