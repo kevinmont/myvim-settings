@@ -16,6 +16,12 @@ syntax on
 " add numbers to each line on the left-hand side
 set number
 
+" smart indentation
+set smartindent 
+
+" set spaces for one level of indentation
+set shiftwidth=2
+
 " set tab width to 2 columns
 set tabstop=2
 
