@@ -10,6 +10,9 @@ filetype plugin on
 " load an indent file for the detected file type
 filetype indent on
 
+" keep indentation from previous line
+set autoindent
+
 " turn sintax highlighting on
 syntax on
 
@@ -38,7 +41,11 @@ inoremap jj <esc>
 " to save & execute current java file
 nnoremap <leader>java :w<cr>:!javac % && java %:r<cr>
 
+" compiles and shows java file code
+nnoremap <leader>jaba :w<cr>:!javac % && javap -c %:r.class<cr>
+
 " }}}
+
 
 
 " VIMSCRIPT ----------------------------------- {{{
